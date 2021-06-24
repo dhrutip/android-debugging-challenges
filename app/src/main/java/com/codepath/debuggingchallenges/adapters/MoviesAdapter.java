@@ -46,7 +46,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return 0;
+        return movies.size();
     }
 
     @NonNull
@@ -74,7 +74,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
         Resources resources = viewHolder.tvName.getResources();
         double movieRating = movie.getRating();
 
-        if (movieRating > 6) {
+        if (movieRating > 8) {
             viewHolder.view.setBackgroundColor(Color.GREEN);
         }
 
